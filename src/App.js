@@ -1,4 +1,10 @@
-import React from "@testing-library/react";
+import React from "react";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Stock from "./pages/Stock";
+import Navbar from "./components/Navbar";
+import Dashboard from "./pages/Dashboard";
+
 
 function App() {
   return (
@@ -6,7 +12,7 @@ function App() {
       <Home />
       <About />
       <Stock />
-      <Dashbaord />
+      <Dashboard />
     </div>
   );
 }
