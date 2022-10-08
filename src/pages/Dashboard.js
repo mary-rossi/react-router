@@ -1,9 +1,19 @@
 import React from "react";
+import stocks from "../components/StockData";
+import { Link } from "react-router-dom";
 
-function Dashboard() {
+function Dashboard(props) {
     return (
         <div>
-            <h1>Dashboard</h1>
+            {stocks.map((stock, index) => {
+                const {name, symbol} = stock;
+                return (
+                    <Link to={`/stocks/${symbol}`}>
+                        <h2>{name}</h2>
+                    </Link>
+                );
+            })
+        }
         </div>
     );
 }
